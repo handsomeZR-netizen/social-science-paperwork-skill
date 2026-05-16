@@ -6,9 +6,9 @@
 
 它不是单纯“润色文字”的工具，而是一个会追问、会卡证据边界、会提醒方法风险的论文协作 skill。
 
-它现在也支持 **Draft Demo 模式**：当你明确说明“不投稿、课堂展示、给同学演示、老板汇报、模拟论文流程”时，它可以生成一篇结构完整、行文漂亮、逻辑自洽的论文示范稿，并把模拟访谈、模拟结果、示例代码本等内容明确标注为 `Draft Demo`，避免把展示材料伪装成真实研究。
+它现在也支持 **Draft Demo 模式**：当你明确说明“不投稿、课堂展示、给同学演示、导师汇报、师兄师姐讨论、课题组汇报、模拟论文流程”时，它可以生成一篇结构完整、行文漂亮、逻辑自洽的论文示范稿，并把模拟访谈、模拟结果、示例代码本等内容明确标注为 `Draft Demo`，避免把展示材料伪装成真实研究。
 
-进一步地，它现在支持 **Premium Draft Demo 模式**：当你需要“一下生成一个看起来非常完整、排版好看、可直接展示的论文成果”时，它会默认生成一个完整 LaTeX/PDF 论文包，而不是只给一段 Markdown 草稿。这个模式适合课堂展示、组会演示、给同学看流程、给老板看论文雏形。
+进一步地，它现在支持 **Premium Draft Demo 模式**：当你需要“一下生成一个看起来非常完整、排版好看、可直接展示的论文成果”时，它会默认生成一个完整 LaTeX/PDF 论文包，而不是只给一段 Markdown 草稿。这个模式适合课堂展示、组会演示、给同学看流程、给导师或师兄师姐看论文雏形。
 
 ## 为什么需要它
 
@@ -37,9 +37,9 @@
 - **投稿前检查**：覆盖 APA/GB/T 引用、COREQ/STROBE/JARS 风格报告意识、伦理声明、AI 使用声明和数据可得性说明。
 - **社科写作模式库**：内置从近年社科论文中蒸馏出的行文结构、段落动作和句式模板，重点学习写法，不复制原文。
 - **目标期刊/导师风格适配**：可以从用户提供的目标期刊论文、相近高质量论文或导师/课题组样稿中学习“结构和修辞模式”，生成 style profile，再逐段修改你的稿件并保留 revision log。
-- **Draft Demo 展示稿**：为课堂展示、同学演示和老板汇报生成完整论文 draft、模拟结果样张、访谈/问卷/代码本附录和讲解稿，并强制标注非投稿用途。
+- **Draft Demo 展示稿**：为课堂展示、同学演示、导师汇报、师兄师姐讨论和课题组汇报生成完整论文 draft、模拟结果样张、访谈/问卷/代码本附录和讲解稿，并强制标注非投稿用途。
 - **Premium LaTeX/PDF 论文包**：一键生成 `main.tex`、分节文件、附录、质量审计和可编译 PDF，模拟内容全部标注为 Draft Demo。
-- **老板展示安全包**：生成展示话术、禁用说法、真实/拟议/模拟/TODO 边界、最小真实化计划，降低把 Demo 误讲成真实研究的风险。
+- **汇报展示安全包**：生成展示话术、禁用说法、真实/拟议/模拟/TODO 边界、最小真实化计划，降低把 Demo 误讲成真实研究的风险。
 
 ## 从 journal-adapt 借鉴了什么
 
@@ -87,7 +87,7 @@ Use $social-science-paperwork 我有目标期刊论文和自己的 manuscript，
 
 | 问题 | 为什么问 |
 |---|---|
-| 这是正式论文、开题、课堂展示，还是老板汇报？ | 决定能不能使用模拟材料，以及需要多严格的证据边界 |
+| 这是正式论文、开题、课堂展示、导师汇报、师兄师姐讨论，还是课题组汇报？ | 决定能不能使用模拟材料，以及需要多严格的证据边界 |
 | 目标学科、课程、导师或期刊是什么？ | 决定写作风格、方法规范和引用格式 |
 | 你手里已经有什么材料？ | 决定是做文献综述、访谈、问卷、案例还是 demo |
 | 有没有真实受访者或问卷数据？ | 决定能不能写 findings/results |
@@ -111,7 +111,7 @@ Use $social-science-paperwork 我有目标期刊论文和自己的 manuscript，
 
 ### 4. 每次产出都会带审计
 
-这个 skill 的重点不是只给你一段漂亮文字，而是给你能解释给老师/老板听的材料：
+这个 skill 的重点不是只给你一段漂亮文字，而是给你能解释给导师、师兄师姐、课题组或课程老师听的材料：
 
 - 哪些内容是真实已有材料。
 - 哪些只是拟议研究设计。
@@ -140,7 +140,7 @@ Use $social-science-paperwork 我有目标期刊论文和自己的 manuscript，
 - **文献状态分区**：区分 `REAL-VERIFIED`、`REAL-METADATA-ONLY`、`VERIFY`、`TODO-CITATION`、`DRAFT-SIM`，避免候选文献被误当成已核验引用。
 - **脚本审计记录**：生成问卷、代码本或引用文件时，应运行或记录本地 audit scripts，输出 `audit_script_results.md`。
 - **PDF 质量门**：Premium Demo 默认追求 10-15 页完整 artifact，记录 `compile_status.md`，并尽量处理 LaTeX overfull 等排版问题。
-- **老板展示话术**：新增安全讲法、禁用说法和展示顺序。第一句话应说明：这是 Draft Demo workflow scaffold，不是完成的实证发现。
+- **汇报展示话术**：新增安全讲法、禁用说法和展示顺序。第一句话应说明：这是 Draft Demo workflow scaffold，不是完成的实证发现。
 - **真实化计划**：Demo 之后要给出最小可行真实研究路线，例如核验 8-12 篇核心文献、2 次预测试访谈、6-8 次正式访谈、1 次代码本修订。
 
 ## 目录结构
@@ -154,7 +154,7 @@ social-science-paperwork/
 │   ├── user-facing-flow.md
 │   ├── journal-style-adaptation.md
 │   ├── literature-verification.md
-│   ├── boss-presentation-guide.md
+│   ├── presentation-guide.md
 │   ├── draft-demo-mode.md
 │   ├── premium-draft-demo.md
 │   ├── section-quality-gates.md
@@ -181,7 +181,7 @@ social-science-paperwork/
     ├── demo_manuscript_template.md
     ├── demo_presentation_notes_template.md
     ├── demo_disclaimer_template.md
-    ├── boss_report_template.md
+    ├── presentation_report_template.md
     ├── premium_demo_outline.md
     └── premium_latex_template/
 ```
@@ -195,11 +195,11 @@ social-science-paperwork/
 - 你有访谈材料，想建立代码本和发现章节结构。
 - 你担心方法章节被审稿人质疑“不透明”“样本不清”“结论过度”。
 - 你想让 AI 帮你写论文，但不想让它把论文写成漂亮废话。
-- 你不是真投稿，只是想给同学、老师或老板展示“社科论文从选题到方法再到结果写法”的完整样张。
+- 你不是真投稿，只是想给同学、导师、师兄师姐、课题组或课程老师展示“社科论文从选题到方法再到结果写法”的完整样张。
 
 ## Draft Demo 模式
 
-当你明确说这是课堂展示、同学演示、老板汇报或非投稿 draft 时，skill 会切换到 Draft Demo 模式。这个模式可以做得更完整、更像正式论文，但会把所有模拟内容标清楚。
+当你明确说这是课堂展示、同学演示、导师汇报、师兄师姐讨论、课题组汇报或非投稿 draft 时，skill 会切换到 Draft Demo 模式。这个模式可以做得更完整、更像正式论文，但会把所有模拟内容标清楚。
 
 它可以生成：
 
@@ -207,7 +207,7 @@ social-science-paperwork/
 - `demo_interview_protocol.md`：半结构访谈提纲。
 - `demo_questionnaire.csv`：问卷构念和题项表。
 - `demo_codebook.csv`：示范代码本。
-- `demo_presentation_notes.md`：给同学或老板讲解的说明稿。
+- `demo_presentation_notes.md`：给同学、导师、师兄师姐或课题组讲解的说明稿。
 
 Draft Demo 模式允许使用模拟访谈片段、模拟主题和示范性结果，但必须保留醒目标记，例如：
 
@@ -219,7 +219,7 @@ Draft Demo Notice: This manuscript is for classroom/demo use only. Simulated par
 
 ## Premium Draft Demo 模式
 
-当你说“直接生成非常完整的论文”“一键生成漂亮 LaTeX/PDF”“不投稿但要像正式论文”“给同学/老板展示”等，skill 会进入 Premium Draft Demo 模式。
+当你说“直接生成非常完整的论文”“一键生成漂亮 LaTeX/PDF”“不投稿但要像正式论文”“给同学、导师、师兄师姐或课题组展示”等，skill 会进入 Premium Draft Demo 模式。
 
 默认输出目录建议为：
 
@@ -236,7 +236,7 @@ reports/social_science_premium_demo_paper/paper/
 - `quality_audit.md`：声明检查、claim-evidence map、overclaim check、模拟材料清单、从 demo 转真实研究的替换清单。
 - `compile_status.md`：LaTeX 编译状态、PDF 页数、重要警告。
 - `audit_script_results.md`：问卷、代码本、引用审计脚本是否运行及结果。
-- `boss_report.md`：给老师/老板展示时的安全讲法、展示顺序和下一步真实化计划。
+- `presentation_report.md`：给导师、师兄师姐、课题组、课程老师或同学展示时的安全讲法、展示顺序和下一步真实化计划。
 - `main.pdf`：如果本机有 XeLaTeX，会直接编译 PDF。
 
 这个模式借鉴了高质量论文写作流程中的几个原则：先写一条中心论点，再建 claim-evidence map；每段只承担一个修辞任务；引言用 hourglass 结构；结果与讨论分开；最后做 overclaim 检查。它不会生成假 DOI、假真实访谈或假统计显著性。
@@ -268,7 +268,7 @@ Use $social-science-paperwork 一键生成一篇课堂展示用 Premium Draft De
 ```
 
 ```text
-Use $social-science-paperwork 给我生成一个老板展示包：包括 Demo PDF、质量审计、展示讲稿、禁用说法和最小真实化研究计划。
+Use $social-science-paperwork 给我生成一个汇报展示包：面向导师/师兄师姐/课题组，包括 Demo PDF、质量审计、展示讲稿、禁用说法和最小真实化研究计划。
 ```
 
 ```text

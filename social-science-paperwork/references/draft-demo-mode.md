@@ -1,6 +1,6 @@
 # Draft Demo Mode
 
-Use this reference when the user wants a classroom presentation, peer demo, boss report, sample manuscript, mock article, or complete draft that is explicitly not for real submission.
+Use this reference when the user wants a classroom presentation, peer demo, advisor report, senior-student discussion, research-group presentation, sample manuscript, mock article, or complete draft that is explicitly not for real submission.
 
 ## Non-Negotiable Labeling
 

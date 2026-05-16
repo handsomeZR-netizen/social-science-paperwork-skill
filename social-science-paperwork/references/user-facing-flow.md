@@ -14,7 +14,7 @@ Do not begin with a long methodology lecture.
 
 Ask these in one short batch unless the answer is already obvious:
 
-1. What is this for: real thesis/paper, proposal, class demo, boss report, or simulated showcase?
+1. What is this for: real thesis/paper, proposal, class demo, advisor/research-group report, senior-student discussion, or simulated showcase?
 2. What is the topic and expected discipline or course/journal?
 3. What evidence do you already have: papers, interviews, cases, survey data, images/artifacts, or only an idea?
 4. Do you need Chinese, English, bilingual, Markdown, Word-style text, LaTeX, PDF, or PPT?

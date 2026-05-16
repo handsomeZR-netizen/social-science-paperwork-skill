@@ -48,7 +48,7 @@ When converting a demo for thesis, course project, or supervisor review, add a s
 | Questionnaire, if used | Expert review plus small pilot before distribution | Revised construct-item table and pilot notes |
 | Demo replacement | Replace all `DRAFT-SIM`, `Pxx-demo`, and `TODO` markers | Real manuscript draft with updated claim-evidence map |
 
-For a boss/advisor meeting, present the demo as a scaffold and the table above as the actual work plan.
+For an advisor, senior-student, research-group, class, or peer meeting, present the demo as a scaffold and the table above as the actual work plan.
 
 ## Stop Conditions
 

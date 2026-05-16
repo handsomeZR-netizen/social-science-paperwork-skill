@@ -31,7 +31,7 @@ In [setting], this demo shows how [topic] can be studied through [approach], sup
 - `audit_script_results.md` for questionnaire/codebook/reference audit scripts, or a reason the scripts were not applicable.
 - Quality audit.
 - Demo-to-real checklist.
-- Boss/advisor report.
+- Presentation/advisor report.
 
 ## Literature Boundary
 
@@ -45,7 +45,7 @@ Use these labels:
 
 Separate verified references from candidate references and citation TODOs in the manuscript or audit file.
 
-## Boss Presentation Order
+## Presentation Order
 
 1. State the Draft Demo boundary.
 2. Show the real input.

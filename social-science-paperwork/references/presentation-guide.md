@@ -1,6 +1,6 @@
-# Boss Presentation Guide
+# Presentation Guide
 
-Use this reference when the output is intended for a supervisor, advisor, class presentation, peer demo, or boss report.
+Use this reference when the output is intended for a supervisor, advisor, senior-student discussion, research-group presentation, class presentation, or peer demo.
 
 ## First Sentence Disclaimer
 
@@ -25,7 +25,7 @@ Use when the user needs a quick summary:
 
 ## Three-Minute Version
 
-Use when the user needs a fuller boss/advisor report:
+Use when the user needs a fuller advisor, senior-student, research-group, class, or peer-facing report:
 
 1. "The goal is to turn a broad topic into a social-science research workflow."
 2. "The current demo uses [real input] only for framing; all example participants/findings are labeled Draft Demo."
@@ -53,7 +53,7 @@ Use instead:
 - "The candidate literature needs verification."
 - "This is a scaffold for advisor feedback."
 
-## Boss Report Template
+## Presentation Report Template
 
 Create a report with these sections:
 

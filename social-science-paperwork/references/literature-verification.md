@@ -45,7 +45,7 @@ In LaTeX, if no verified references exist, write a boundary note instead of a fa
 No verified reference list is generated in this demo. Candidate papers are listed in the audit file and must be checked before they support manuscript claims.
 ```
 
-## Boss/Advisor Language
+## Advisor/Presentation Language
 
 Safe wording:
 

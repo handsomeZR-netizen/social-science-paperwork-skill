@@ -30,7 +30,7 @@ Create:
 - `quality_audit.md`
 - `compile_status.md` if LaTeX compilation is attempted.
 - `audit_script_results.md` if questionnaire, codebook, citation, or reference files are generated.
-- `boss_report.md` or equivalent supervisor-facing summary when the user wants to show the output to a boss/advisor/class.
+- `presentation_report.md` or equivalent summary when the user wants to show the output to a supervisor, advisor, senior student, research group, class, or peer audience.
 - `main.pdf` when XeLaTeX or latexmk is available.
 
 ## Writing Order
@@ -63,7 +63,7 @@ Do not write in raw manuscript order. Build the argument first:
 - Never write "we interviewed", "participants reported", "the survey found", or p values unless real data was provided.
 - If producing CSV files, include a status column such as `REAL-VERIFIED`, `REAL-METADATA-ONLY`, `VERIFY`, `PROPOSED`, or `DRAFT-SIM`.
 - If questionnaire or codebook files are created, run the bundled audit scripts when their schemas match; otherwise create `audit_script_results.md` explaining why the scripts were not applicable.
-- For boss/advisor display, create a short report that states what to show, what to say, and what not to claim.
+- For advisor, senior-student, research-group, class, or peer display, create a short report that states what to show, what to say, and what not to claim.
 
 ## Default LaTeX Style
 
@@ -87,12 +87,12 @@ Use these principles, adapted from high-impact writing workflows:
 - Calibrate verbs: `shows` only for real evidence; `illustrates`, `demonstrates the workflow`, or `would support` for simulated material.
 - Run an overclaim check before final output.
 
-## Boss-Ready Quality Gate
+## Presentation-Ready Quality Gate
 
-Before calling the package ready for a boss/advisor/class demo, verify:
+Before calling the package ready for an advisor, senior-student, research-group, class, or peer demo, verify:
 
 - The first page or first screen contains a visible Draft Demo disclosure.
-- The boss report starts with a one-sentence disclaimer: "This is a workflow scaffold, not completed empirical findings."
+- The presentation report starts with a one-sentence disclaimer: "This is a workflow scaffold, not completed empirical findings."
 - Literature is split into verified, metadata-only/candidate, and TODO sections.
 - The discussion has at least four moves: theoretical implication, methodological implication, practice/education implication, and boundary conditions.
 - A minimum viable real-study plan is present, with sample targets, literature-verification targets, and the next concrete action.

@@ -1,6 +1,6 @@
 ---
 name: social-science-paperwork
-description: End-to-end social science and humanities manuscript workflow for research design, literature reviews, questionnaires, interviews, qualitative coding, survey analysis, APA/GB/T citation checks, ethics statements, journal/user-style adaptation, submission audits, and premium classroom/demo draft manuscripts with LaTeX/PDF output. Use when Codex helps plan, draft, audit, or analyze social science, humanities, education, communication, management, design research, cultural studies, or mixed-methods papers, especially involving surveys, interviews, focus groups, case studies, thematic analysis, grounded theory, scales, reliability, validity, human-subject data, target-journal style, advisor/lab writing preferences, non-submission demo papers, classroom presentations, boss reports, simulated findings, draft-demo manuscripts, one-click complete papers, polished LaTeX, or "perfect paper" demo drafts.
+description: End-to-end social science and humanities manuscript workflow for research design, literature reviews, questionnaires, interviews, qualitative coding, survey analysis, APA/GB/T citation checks, ethics statements, journal/user-style adaptation, submission audits, and premium classroom/demo draft manuscripts with LaTeX/PDF output. Use when Codex helps plan, draft, audit, or analyze social science, humanities, education, communication, management, design research, cultural studies, or mixed-methods papers, especially involving surveys, interviews, focus groups, case studies, thematic analysis, grounded theory, scales, reliability, validity, human-subject data, target-journal style, advisor/lab writing preferences, non-submission demo papers, classroom presentations, advisor reports, senior-student or research-group presentations, simulated findings, draft-demo manuscripts, one-click complete papers, polished LaTeX, or "perfect paper" demo drafts.
 ---
 
 # Social Science Paperwork
@@ -17,7 +17,7 @@ If the user is unsure how to work with AI, run the skill as a guided workflow, n
 
 Default to this conversational order:
 
-1. **Purpose** - Is this real research, a course demo, a boss report, a proposal, or revision?
+1. **Purpose** - Is this real research, a course demo, an advisor/research-group report, a proposal, or revision?
 2. **Topic and audience** - What is the topic, discipline, target journal/class/advisor, and expected language?
 3. **Evidence already available** - Literature, interview transcripts, survey data, cases, archives, artifacts, or only an idea.
 4. **Method route** - Recommend one route card: qualitative-led, questionnaire-led, mixed-methods, literature/theory-led, or Premium Draft Demo.
@@ -29,8 +29,8 @@ Default to this conversational order:
 First determine whether the user needs **Research Mode**, **Draft Demo Mode**, or **Premium Draft Demo Mode**:
 
 - **Research Mode** - Use for real theses, manuscripts, journal submissions, research reports, or any output that may be evaluated as actual research. Keep all claims source-grounded and do not create fake data, participants, quotes, citations, approvals, or findings.
-- **Draft Demo Mode** - Use when the user explicitly says the output is for classroom presentation, peer demonstration, boss reporting, non-submission draft, simulated workflow, demo manuscript, or "not a real submission." In this mode, Codex may generate a complete manuscript-like draft and simulated findings only if every simulated element is clearly labeled as draft/demo/non-real.
-- **Premium Draft Demo Mode** - Use when the user asks for a one-click complete paper, polished LaTeX/PDF, "perfect" demo paper, or a beautiful classroom/boss presentation artifact. Produce a full paper package, not a short explanation: LaTeX source, sections, appendices, quality audit, and compiled PDF when LaTeX is available.
+- **Draft Demo Mode** - Use when the user explicitly says the output is for classroom presentation, peer demonstration, advisor/research-group reporting, non-submission draft, simulated workflow, demo manuscript, or "not a real submission." In this mode, Codex may generate a complete manuscript-like draft and simulated findings only if every simulated element is clearly labeled as draft/demo/non-real.
+- **Premium Draft Demo Mode** - Use when the user asks for a one-click complete paper, polished LaTeX/PDF, "perfect" demo paper, or a beautiful classroom/advisor/research-group presentation artifact. Produce a full paper package, not a short explanation: LaTeX source, sections, appendices, quality audit, and compiled PDF when LaTeX is available.
 
 For Draft Demo Mode, put a visible disclosure near the beginning of the output:
 
@@ -38,7 +38,7 @@ For Draft Demo Mode, put a visible disclosure near the beginning of the output:
 
 If the user asks for a complete paper but does not say whether it is real or demo, ask before generating findings or data-like content. If they do not answer, default to Research Mode.
 
-For Premium Draft Demo Mode, load `references/premium-draft-demo.md`, `references/section-quality-gates.md`, `references/draft-demo-mode.md`, `references/demo-to-real.md`, `references/literature-verification.md`, and `references/boss-presentation-guide.md`. Use the premium LaTeX assets under `assets/premium_latex_template/` as the starting structure.
+For Premium Draft Demo Mode, load `references/premium-draft-demo.md`, `references/section-quality-gates.md`, `references/draft-demo-mode.md`, `references/demo-to-real.md`, `references/literature-verification.md`, and `references/presentation-guide.md`. Use the premium LaTeX assets under `assets/premium_latex_template/` as the starting structure.
 
 ## Triage
 
@@ -92,7 +92,7 @@ Before giving a full plan, usually ask about:
    Mark each section as real background, proposed design, simulated material, or writing example. Write simulated results as "illustrative findings" or "demonstration themes," never as completed empirical findings.
 
 9. **For Premium Draft Demo Mode, write output-first.**
-   Build the one-sentence argument, claim-evidence map, manuscript skeleton, section files, appendices, boss-facing report, script audit record, and quality audit before compiling. The output should feel like a complete paper artifact while preserving Draft Demo transparency.
+   Build the one-sentence argument, claim-evidence map, manuscript skeleton, section files, appendices, presentation-facing report, script audit record, and quality audit before compiling. The output should feel like a complete paper artifact while preserving Draft Demo transparency.
 
 10. **For journal/advisor adaptation, separate style learning from manuscript writing.**
     Load `references/journal-style-adaptation.md`. Extract only rhetorical and structural patterns from the corpus, save a style profile, ask the user to confirm it, then revise one section at a time with a log. Preserve citations, facts, claims, quotes, statistics, variables, and labels verbatim unless the user explicitly asks for a content change.
@@ -112,7 +112,7 @@ Load only the relevant reference file:
 - `references/user-facing-flow.md` - Plain-language user workflow, question set, route cards, and output contracts.
 - `references/journal-style-adaptation.md` - Optional target-journal/advisor style-profile workflow adapted from dynamic writing-skill principles.
 - `references/literature-verification.md` - Literature status labels, citation boundary rules, and verified-vs-candidate reference sections.
-- `references/boss-presentation-guide.md` - Supervisor-facing presentation order, safe wording, forbidden wording, and demo disclaimer scripts.
+- `references/presentation-guide.md` - Advisor, senior-student, research-group, class, or peer-facing presentation order, safe wording, forbidden wording, and demo disclaimer scripts.
 - `references/writing-patterns.md` - Writing and structure moves distilled from a 50-paper recent social science corpus.
 - `references/draft-demo-mode.md` - Classroom/demo manuscript mode, transparent simulation labels, complete draft package structure.
 - `references/premium-draft-demo.md` - One-click polished demo paper package workflow with LaTeX/PDF output.
@@ -140,7 +140,7 @@ Use templates in `assets/` as starting points for user-facing files:
 - `assets/demo_disclaimer_template.md`
 - `assets/premium_latex_template/`
 - `assets/premium_demo_outline.md`
-- `assets/boss_report_template.md`
+- `assets/presentation_report_template.md`
 
 ## Safety Checks
 
@@ -154,7 +154,7 @@ Before finalizing any plan or manuscript section, verify:
 - AI use disclosure follows the target journal's current policy.
 - Draft Demo outputs visibly label simulated materials and do not imply real data collection, real participants, real ethics approval, or real statistical results.
 - Premium Draft Demo outputs include a quality audit that checks disclosure visibility, claim-evidence alignment, overclaim risk, simulated-material labels, citation placeholders, and demo-to-real next steps.
-- Premium Draft Demo outputs should include a `compile_status.md` when LaTeX is attempted, an `audit_script_results.md` when questionnaire/codebook/reference files are generated, and a boss-facing explanation that says the PDF is a workflow scaffold rather than completed findings.
+- Premium Draft Demo outputs should include a `compile_status.md` when LaTeX is attempted, an `audit_script_results.md` when questionnaire/codebook/reference files are generated, and a presentation-facing explanation that says the PDF is a workflow scaffold rather than completed findings.
 - Candidate literature marked `VERIFY`, `REAL-METADATA-ONLY`, or `TODO-CITATION` must not be used as if it already supports a manuscript claim.
 - Journal/advisor adaptation describes only structure, rhetoric, section order, claim placement, hedging, and revision rules. It must not quote or paraphrase corpus papers, and it must not add unsupported facts to the manuscript.
 

@@ -12,7 +12,7 @@ Ask 3-5 questions, not a full questionnaire. Prefer questions that change the re
 4. Does the study involve human participants, interviews, surveys, students, employees, minors, or sensitive data?
 5. What output does the user need now: research questions, theory framework, interview guide, questionnaire, analysis plan, or manuscript section?
 
-If the user asks for a full paper, sample paper, classroom presentation, boss report, or "not for submission" draft, ask one additional mode question before producing data-like content:
+If the user asks for a full paper, sample paper, classroom presentation, advisor/research-group report, senior-student discussion, or "not for submission" draft, ask one additional mode question before producing data-like content:
 
 - Is this a real research manuscript, or a clearly labeled Draft Demo for presentation only?
 
