@@ -1,6 +1,6 @@
 ---
 name: social-science-paperwork
-description: End-to-end social science and humanities manuscript workflow for research design, literature reviews, questionnaires, semi-structured interviews, qualitative coding, survey analysis, APA/GB/T citation checks, ethics statements, and submission audits. Use when Codex helps plan, draft, audit, or analyze social science, humanities, education, communication, management, design research, cultural studies, or mixed-methods papers, especially involving surveys, interviews, focus groups, case studies, thematic analysis, grounded theory, scales, reliability, validity, or human-subject data.
+description: End-to-end social science and humanities manuscript workflow for research design, literature reviews, questionnaires, semi-structured interviews, qualitative coding, survey analysis, APA/GB/T citation checks, ethics statements, submission audits, and clearly labeled classroom/demo draft manuscripts. Use when Codex helps plan, draft, audit, or analyze social science, humanities, education, communication, management, design research, cultural studies, or mixed-methods papers, especially involving surveys, interviews, focus groups, case studies, thematic analysis, grounded theory, scales, reliability, validity, human-subject data, non-submission demo papers, classroom presentations, boss reports, simulated findings, or draft-demo manuscripts.
 ---
 
 # Social Science Paperwork
@@ -10,6 +10,19 @@ description: End-to-end social science and humanities manuscript workflow for re
 Treat AI as a research assistant, not the responsible researcher. Never invent data, citations, scales, ethics approvals, participants, interview quotes, statistical significance, or coding evidence. Keep a traceable chain from source material to claims.
 
 Default to **ask-first collaboration**. For underspecified social science or humanities tasks, ask a small number of high-impact questions before producing a full design. Do not bury the user in methodology; ask the decisions that change the plan.
+
+## Mode Selection
+
+First determine whether the user needs **Research Mode** or **Draft Demo Mode**:
+
+- **Research Mode** - Use for real theses, manuscripts, journal submissions, research reports, or any output that may be evaluated as actual research. Keep all claims source-grounded and do not create fake data, participants, quotes, citations, approvals, or findings.
+- **Draft Demo Mode** - Use when the user explicitly says the output is for classroom presentation, peer demonstration, boss reporting, non-submission draft, simulated workflow, demo manuscript, or "not a real submission." In this mode, Codex may generate a complete manuscript-like draft and simulated findings only if every simulated element is clearly labeled as draft/demo/non-real.
+
+For Draft Demo Mode, put a visible disclosure near the beginning of the output:
+
+`Draft Demo Notice: This manuscript is for classroom/demo use only. Simulated participants, data, quotes, codes, and findings are illustrative and must not be presented as completed research or submitted as a real paper.`
+
+If the user asks for a complete paper but does not say whether it is real or demo, ask before generating findings or data-like content. If they do not answer, default to Research Mode.
 
 ## Triage
 
@@ -22,6 +35,7 @@ Start by classifying the request:
 5. **Qualitative analysis** - Transcript cleaning, codebook, thematic analysis, grounded theory, audit trail.
 6. **Quantitative survey analysis** - Data dictionary, cleaning, reliability, EFA/CFA, regression, mediation/moderation, reporting.
 7. **Manuscript and submission** - APA 7, GB/T 7714, JARS, COREQ, STROBE, ethics, AI disclosure, references.
+8. **Draft Demo manuscript** - Clearly labeled classroom/demo paper, simulated method walkthrough, illustrative findings, presentation notes, and demo appendices.
 
 If the topic involves craft/design/culture/sustainability and the user has not specified a method, first offer route options: qualitative-led, questionnaire-led, mixed-methods, or literature/theory-led. If the user does not answer, proceed explicitly under the assumption of a **qualitative-led design**: literature landscape plus interviews/cases, with a small questionnaire only when it measures attitudes, perception, acceptance, or intention.
 
@@ -56,6 +70,9 @@ Before giving a full plan, usually ask about:
 7. **Write claims within the evidence boundary.**
    Avoid population-level or causal language when using convenience samples, small interviews, case studies, or cross-sectional surveys.
 
+8. **For Draft Demo Mode, separate real evidence from simulation.**
+   Mark each section as real background, proposed design, simulated material, or writing example. Write simulated results as "illustrative findings" or "demonstration themes," never as completed empirical findings.
+
 ## References To Load
 
 Load only the relevant reference file:
@@ -69,6 +86,7 @@ Load only the relevant reference file:
 - `references/citation-and-submission.md` - APA 7, GB/T 7714, JARS, COREQ, STROBE, ethics, AI disclosure, submission checks.
 - `references/question-flow.md` - User-friendly clarification flow and default questions.
 - `references/writing-patterns.md` - Writing and structure moves distilled from a 50-paper recent social science corpus.
+- `references/draft-demo-mode.md` - Classroom/demo manuscript mode, transparent simulation labels, complete draft package structure.
 
 ## Scripts And Assets
 
@@ -86,6 +104,9 @@ Use templates in `assets/` as starting points for user-facing files:
 - `assets/interview_protocol_template.md`
 - `assets/codebook_template.csv`
 - `assets/submission_checklist_template.md`
+- `assets/demo_manuscript_template.md`
+- `assets/demo_presentation_notes_template.md`
+- `assets/demo_disclaimer_template.md`
 
 ## Safety Checks
 
@@ -97,6 +118,7 @@ Before finalizing any plan or manuscript section, verify:
 - Quantitative claims report effect sizes or uncertainty where appropriate, not only p values.
 - Qualitative claims cite concrete evidence and include boundary conditions.
 - AI use disclosure follows the target journal's current policy.
+- Draft Demo outputs visibly label simulated materials and do not imply real data collection, real participants, real ethics approval, or real statistical results.
 
 ## Style Corpus
 

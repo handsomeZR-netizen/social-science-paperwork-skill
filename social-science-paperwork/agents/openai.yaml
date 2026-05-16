@@ -1,4 +1,4 @@
 interface:
   display_name: "Social Science Paperwork"
-  short_description: "Social science paper workflows"
-  default_prompt: "Use $social-science-paperwork to ask the key questions first, then help design or audit my social science manuscript workflow."
+  short_description: "Social science paper and demo draft workflows"
+  default_prompt: "Use $social-science-paperwork to ask the key questions first, then help design, audit, or create a clearly labeled demo draft for my social science manuscript workflow."

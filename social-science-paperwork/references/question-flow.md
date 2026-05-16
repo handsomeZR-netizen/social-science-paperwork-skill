@@ -12,6 +12,10 @@ Ask 3-5 questions, not a full questionnaire. Prefer questions that change the re
 4. Does the study involve human participants, interviews, surveys, students, employees, minors, or sensitive data?
 5. What output does the user need now: research questions, theory framework, interview guide, questionnaire, analysis plan, or manuscript section?
 
+If the user asks for a full paper, sample paper, classroom presentation, boss report, or "not for submission" draft, ask one additional mode question before producing data-like content:
+
+- Is this a real research manuscript, or a clearly labeled Draft Demo for presentation only?
+
 ## Mode-Specific Questions
 
 ### Research Design
@@ -40,6 +44,13 @@ Ask 3-5 questions, not a full questionnaire. Prefer questions that change the re
 - Which databases and languages matter?
 - Is the gap field-wide, target-journal-specific, region-specific, or method-specific?
 
+### Draft Demo
+
+- Who is the audience: classmates, instructor, supervisor, or workshop participants?
+- Should the output be a complete manuscript draft, a methods package, presentation notes, or all three?
+- May illustrative findings, mock participant IDs, and sample quotes be used if clearly labeled as simulated?
+- What real inputs should be preserved: topic, target journal, literature notes, existing corpus, cases, or class requirements?
+
 ## User-Friendly Defaults
 
 If the user does not answer, proceed with stated assumptions:
@@ -48,6 +59,7 @@ If the user does not answer, proceed with stated assumptions:
 - For early-stage papers, produce RQs before hypotheses.
 - For human-subject data, assume consent/anonymization is required until proven otherwise.
 - For questionnaires, treat generated items as drafts requiring source verification and pilot testing.
+- For Draft Demo requests, default to a complete demo package with a visible disclaimer, manuscript-like structure, simulated findings clearly labeled as illustrative, and presentation notes explaining the workflow.
 
 ## Tone
 

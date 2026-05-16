@@ -46,6 +46,12 @@ Studio/course/practice problem -> pedagogy or design-practice concept -> interve
 
 Preservation/adaptation tension -> craft as knowledge/practice/material culture -> cases/interviews/documents -> cultural and environmental sustainability distinction -> community/design/policy implication.
 
+### Draft Demo Manuscript
+
+Visible demo notice -> polished title and abstract -> real or plausible problem situation -> bounded literature gap -> conceptual lens -> proposed methods -> clearly labeled illustrative findings -> discussion of what the demo shows -> limits and next real-data steps.
+
+Use this pattern only when the user explicitly wants a non-submission classroom/demo draft. Keep the writing fluent and manuscript-like, but label simulated findings and sample quotes as illustrative.
+
 ## Common Weaknesses To Avoid
 
 - Overclaiming a target-journal gap as a field-wide gap.
@@ -53,3 +59,12 @@ Preservation/adaptation tension -> craft as knowledge/practice/material culture 
 - Treating sustainability as a slogan instead of separating environmental, cultural, and social dimensions.
 - Listing themes without evidence and interpretation.
 - Letting AI polish away uncertainty, conflict, and negative cases.
+- Presenting Draft Demo material as if real participants, real interviews, or real statistical results existed.
+
+## Draft Demo Phrases
+
+- This manuscript is a classroom demonstration draft rather than a report of completed empirical research.
+- The following findings are illustrative and are included to show how a qualitative findings section could be structured after real data collection.
+- Simulated participant labels and sample excerpts are used only to demonstrate the evidence chain from excerpt to code to theme.
+- In a real submission, this section would need to be replaced with verified participant information, anonymized transcripts, and documented coding decisions.
+- The draft therefore demonstrates the logic of the study rather than claiming completed empirical evidence.

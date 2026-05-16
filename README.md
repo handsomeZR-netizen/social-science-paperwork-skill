@@ -6,6 +6,8 @@
 
 它不是单纯“润色文字”的工具，而是一个会追问、会卡证据边界、会提醒方法风险的论文协作 skill。
 
+它现在也支持 **Draft Demo 模式**：当你明确说明“不投稿、课堂展示、给同学演示、老板汇报、模拟论文流程”时，它可以生成一篇结构完整、行文漂亮、逻辑自洽的论文示范稿，并把模拟访谈、模拟结果、示例代码本等内容明确标注为 `Draft Demo`，避免把展示材料伪装成真实研究。
+
 ## 为什么需要它
 
 工科论文通常靠实验、性能、模型或系统改进说服读者。文科和社科论文的说服方式不同：它更依赖概念是否清楚、理论是否能解释材料、样本和结论是否匹配、访谈或问卷是否透明、讨论是否真的回到理论和实践贡献。
@@ -32,6 +34,7 @@
 - **定量分析骨架**：提供 R 脚本骨架，用于问卷数据清洗、描述统计、信度分析和基础模型准备。
 - **投稿前检查**：覆盖 APA/GB/T 引用、COREQ/STROBE/JARS 风格报告意识、伦理声明、AI 使用声明和数据可得性说明。
 - **社科写作模式库**：内置从近年社科论文中蒸馏出的行文结构、段落动作和句式模板，重点学习写法，不复制原文。
+- **Draft Demo 展示稿**：为课堂展示、同学演示和老板汇报生成完整论文 draft、模拟结果样张、访谈/问卷/代码本附录和讲解稿，并强制标注非投稿用途。
 
 ## 目录结构
 
@@ -41,6 +44,7 @@ social-science-paperwork/
 ├── agents/openai.yaml
 ├── references/
 │   ├── question-flow.md
+│   ├── draft-demo-mode.md
 │   ├── writing-patterns.md
 │   ├── research-design.md
 │   ├── literature-review.md
@@ -59,7 +63,10 @@ social-science-paperwork/
     ├── questionnaire_template.csv
     ├── interview_protocol_template.md
     ├── codebook_template.csv
-    └── submission_checklist_template.md
+    ├── submission_checklist_template.md
+    ├── demo_manuscript_template.md
+    ├── demo_presentation_notes_template.md
+    └── demo_disclaimer_template.md
 ```
 
 ## 适合什么场景
@@ -71,6 +78,27 @@ social-science-paperwork/
 - 你有访谈材料，想建立代码本和发现章节结构。
 - 你担心方法章节被审稿人质疑“不透明”“样本不清”“结论过度”。
 - 你想让 AI 帮你写论文，但不想让它把论文写成漂亮废话。
+- 你不是真投稿，只是想给同学、老师或老板展示“社科论文从选题到方法再到结果写法”的完整样张。
+
+## Draft Demo 模式
+
+当你明确说这是课堂展示、同学演示、老板汇报或非投稿 draft 时，skill 会切换到 Draft Demo 模式。这个模式可以做得更完整、更像正式论文，但会把所有模拟内容标清楚。
+
+它可以生成：
+
+- `demo_manuscript_draft.md`：完整论文示范稿。
+- `demo_interview_protocol.md`：半结构访谈提纲。
+- `demo_questionnaire.csv`：问卷构念和题项表。
+- `demo_codebook.csv`：示范代码本。
+- `demo_presentation_notes.md`：给同学或老板讲解的说明稿。
+
+Draft Demo 模式允许使用模拟访谈片段、模拟主题和示范性结果，但必须保留醒目标记，例如：
+
+```text
+Draft Demo Notice: This manuscript is for classroom/demo use only. Simulated participants, data, quotes, codes, and findings are illustrative and must not be presented as completed research or submitted as a real paper.
+```
+
+这意味着它可以帮你做“看起来完整、结构自洽、适合展示”的论文样张，但不会把模拟材料包装成真实研究。
 
 ## 示例 Prompt
 
@@ -88,6 +116,10 @@ Use $social-science-paperwork 根据这些访谈材料帮我建立代码本和 f
 
 ```text
 Use $social-science-paperwork 检查我的社科论文有没有证据不足、结论过度、伦理说明缺失的问题。
+```
+
+```text
+Use $social-science-paperwork 帮我做一篇课堂展示用的完整社科论文 Draft Demo，主题是传统陶瓷工艺与可持续设计，不投稿，允许模拟结果但必须明确标注。
 ```
 
 ## 安装方式
@@ -133,6 +165,8 @@ python .\social-science-paperwork\scripts\codebook_consistency_check.py .\social
 - 把 AI 生成内容伪装成真实材料。
 
 它的真正价值不是把弱研究包装得更强，而是更早告诉你哪里弱、该怎么补。
+
+如果你使用 Draft Demo 模式，它可以写模拟材料，但会持续提醒这些材料只能用于展示。真实投稿前必须替换为真实文献、真实数据、真实访谈或真实案例。
 
 ## 一句话总结
 
