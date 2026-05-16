@@ -38,7 +38,7 @@ For Draft Demo Mode, put a visible disclosure near the beginning of the output:
 
 If the user asks for a complete paper but does not say whether it is real or demo, ask before generating findings or data-like content. If they do not answer, default to Research Mode.
 
-For Premium Draft Demo Mode, load `references/premium-draft-demo.md`, `references/section-quality-gates.md`, `references/draft-demo-mode.md`, and `references/demo-to-real.md`. Use the premium LaTeX assets under `assets/premium_latex_template/` as the starting structure.
+For Premium Draft Demo Mode, load `references/premium-draft-demo.md`, `references/section-quality-gates.md`, `references/draft-demo-mode.md`, `references/demo-to-real.md`, `references/literature-verification.md`, and `references/boss-presentation-guide.md`. Use the premium LaTeX assets under `assets/premium_latex_template/` as the starting structure.
 
 ## Triage
 
@@ -92,7 +92,7 @@ Before giving a full plan, usually ask about:
    Mark each section as real background, proposed design, simulated material, or writing example. Write simulated results as "illustrative findings" or "demonstration themes," never as completed empirical findings.
 
 9. **For Premium Draft Demo Mode, write output-first.**
-   Build the one-sentence argument, claim-evidence map, manuscript skeleton, section files, appendices, and quality audit before compiling. The output should feel like a complete paper artifact while preserving Draft Demo transparency.
+   Build the one-sentence argument, claim-evidence map, manuscript skeleton, section files, appendices, boss-facing report, script audit record, and quality audit before compiling. The output should feel like a complete paper artifact while preserving Draft Demo transparency.
 
 10. **For journal/advisor adaptation, separate style learning from manuscript writing.**
     Load `references/journal-style-adaptation.md`. Extract only rhetorical and structural patterns from the corpus, save a style profile, ask the user to confirm it, then revise one section at a time with a log. Preserve citations, facts, claims, quotes, statistics, variables, and labels verbatim unless the user explicitly asks for a content change.
@@ -111,6 +111,8 @@ Load only the relevant reference file:
 - `references/question-flow.md` - User-friendly clarification flow and default questions.
 - `references/user-facing-flow.md` - Plain-language user workflow, question set, route cards, and output contracts.
 - `references/journal-style-adaptation.md` - Optional target-journal/advisor style-profile workflow adapted from dynamic writing-skill principles.
+- `references/literature-verification.md` - Literature status labels, citation boundary rules, and verified-vs-candidate reference sections.
+- `references/boss-presentation-guide.md` - Supervisor-facing presentation order, safe wording, forbidden wording, and demo disclaimer scripts.
 - `references/writing-patterns.md` - Writing and structure moves distilled from a 50-paper recent social science corpus.
 - `references/draft-demo-mode.md` - Classroom/demo manuscript mode, transparent simulation labels, complete draft package structure.
 - `references/premium-draft-demo.md` - One-click polished demo paper package workflow with LaTeX/PDF output.
@@ -138,6 +140,7 @@ Use templates in `assets/` as starting points for user-facing files:
 - `assets/demo_disclaimer_template.md`
 - `assets/premium_latex_template/`
 - `assets/premium_demo_outline.md`
+- `assets/boss_report_template.md`
 
 ## Safety Checks
 
@@ -151,6 +154,8 @@ Before finalizing any plan or manuscript section, verify:
 - AI use disclosure follows the target journal's current policy.
 - Draft Demo outputs visibly label simulated materials and do not imply real data collection, real participants, real ethics approval, or real statistical results.
 - Premium Draft Demo outputs include a quality audit that checks disclosure visibility, claim-evidence alignment, overclaim risk, simulated-material labels, citation placeholders, and demo-to-real next steps.
+- Premium Draft Demo outputs should include a `compile_status.md` when LaTeX is attempted, an `audit_script_results.md` when questionnaire/codebook/reference files are generated, and a boss-facing explanation that says the PDF is a workflow scaffold rather than completed findings.
+- Candidate literature marked `VERIFY`, `REAL-METADATA-ONLY`, or `TODO-CITATION` must not be used as if it already supports a manuscript claim.
 - Journal/advisor adaptation describes only structure, rhetoric, section order, claim placement, hedging, and revision rules. It must not quote or paraphrase corpus papers, and it must not add unsupported facts to the manuscript.
 
 ## Style Corpus

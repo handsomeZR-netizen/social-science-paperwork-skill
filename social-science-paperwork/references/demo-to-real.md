@@ -33,6 +33,23 @@ Do not remove Draft Demo labels until every simulated element has been replaced 
 6. Rebuild methods in past tense only for procedures actually completed.
 7. Keep limitations aligned with actual sample, data, and analysis.
 
+## Minimum Viable Real-Study Plan
+
+When converting a demo for thesis, course project, or supervisor review, add a short plan with concrete replacement targets:
+
+| Workstream | Minimum target | Output |
+|---|---|---|
+| Literature verification | 8-12 core papers read in full | Verified literature matrix with claim-support notes and page/section anchors |
+| Case selection | 2-3 real cases or course/project artifacts | Case rationale, source files, image/text permissions |
+| Ethics route | Institution-specific approval or exemption decision | Ethics note, consent script, data storage plan |
+| Pilot interviews | 2 exploratory interviews | Revised interview protocol and memo |
+| Formal interviews | 6-8 initial interviews, expandable if themes remain thin | Transcript excerpts, anonymized participant table |
+| Qualitative coding | At least one codebook revision cycle | Codebook, theme memo, negative-case notes |
+| Questionnaire, if used | Expert review plus small pilot before distribution | Revised construct-item table and pilot notes |
+| Demo replacement | Replace all `DRAFT-SIM`, `Pxx-demo`, and `TODO` markers | Real manuscript draft with updated claim-evidence map |
+
+For a boss/advisor meeting, present the demo as a scaffold and the table above as the actual work plan.
+
 ## Stop Conditions
 
 Do not call the manuscript real if any of these remain:

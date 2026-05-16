@@ -28,6 +28,9 @@ Create:
 - `appendix/codebook_demo.tex`
 - `demo_disclosure.tex`
 - `quality_audit.md`
+- `compile_status.md` if LaTeX compilation is attempted.
+- `audit_script_results.md` if questionnaire, codebook, citation, or reference files are generated.
+- `boss_report.md` or equivalent supervisor-facing summary when the user wants to show the output to a boss/advisor/class.
 - `main.pdf` when XeLaTeX or latexmk is available.
 
 ## Writing Order
@@ -42,9 +45,11 @@ Do not write in raw manuscript order. Build the argument first:
    Context -> gap -> framework -> research questions -> method -> illustrative findings -> discussion -> demo-to-real path.
 4. **Section drafting**
    Write each section with one rhetorical job per paragraph.
-5. **Quality audit**
-   Check disclosure, unsupported claims, fake citations, findings labels, and real-data replacement needs.
-6. **Compile**
+5. **Reference boundary**
+   Separate verified literature, metadata-only candidate literature, and citation TODOs before drafting literature claims.
+6. **Quality audit**
+   Check disclosure, unsupported claims, fake citations, findings labels, script audit results, and real-data replacement needs.
+7. **Compile**
    Use XeLaTeX for Chinese output.
 
 ## Premium Quality Rules
@@ -54,7 +59,11 @@ Do not write in raw manuscript order. Build the argument first:
 - Use tables, a workflow figure, callout boxes, and appendices for a polished artifact.
 - Keep demo labels visible but not so intrusive that the paper stops looking professional.
 - Cite real user-provided sources only. If citation support is missing, insert `% TODO: verify citation` in LaTeX and list it in `quality_audit.md`.
+- If the user provides metadata-only papers, label them `REAL-METADATA-ONLY` or `VERIFY` and place them in a candidate section, not in claim-supporting references.
 - Never write "we interviewed", "participants reported", "the survey found", or p values unless real data was provided.
+- If producing CSV files, include a status column such as `REAL-VERIFIED`, `REAL-METADATA-ONLY`, `VERIFY`, `PROPOSED`, or `DRAFT-SIM`.
+- If questionnaire or codebook files are created, run the bundled audit scripts when their schemas match; otherwise create `audit_script_results.md` explaining why the scripts were not applicable.
+- For boss/advisor display, create a short report that states what to show, what to say, and what not to claim.
 
 ## Default LaTeX Style
 
@@ -63,6 +72,8 @@ Do not write in raw manuscript order. Build the argument first:
 - Use `tcolorbox` for disclosure and evidence boundary boxes.
 - Use `booktabs`, `tabularx`, and small appendices for methods artifacts.
 - Keep the main paper around 10-15 pages unless the user requests otherwise.
+- Avoid visible overfull layout by shortening long paths/labels, using line breaks in tables, and using local `\small`, `\footnotesize`, or `\raggedright` table columns where needed.
+- Record compile attempts and important log warnings in `compile_status.md`.
 
 ## Borrowed Quality Principles
 
@@ -75,3 +86,14 @@ Use these principles, adapted from high-impact writing workflows:
 - Claim near evidence.
 - Calibrate verbs: `shows` only for real evidence; `illustrates`, `demonstrates the workflow`, or `would support` for simulated material.
 - Run an overclaim check before final output.
+
+## Boss-Ready Quality Gate
+
+Before calling the package ready for a boss/advisor/class demo, verify:
+
+- The first page or first screen contains a visible Draft Demo disclosure.
+- The boss report starts with a one-sentence disclaimer: "This is a workflow scaffold, not completed empirical findings."
+- Literature is split into verified, metadata-only/candidate, and TODO sections.
+- The discussion has at least four moves: theoretical implication, methodological implication, practice/education implication, and boundary conditions.
+- A minimum viable real-study plan is present, with sample targets, literature-verification targets, and the next concrete action.
+- The output avoids phrases such as "we found", "participants reported", "the data prove", and "the questionnaire is validated" unless real evidence exists.
