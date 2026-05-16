@@ -1,0 +1,3 @@
+construct,dimension,item_id,item_text,response_scale,source,reverse_coded,notes
+cultural_sustainability,heritage_value,cs_01,I can explain how traditional craft knowledge contributes to contemporary design practice,1 strongly disagree - 5 strongly agree,adapted from literature,no,Replace with real source and pilot-test wording
+design_acceptance,practice_intention,da_01,I intend to use traditional craft techniques in future design projects,1 strongly disagree - 5 strongly agree,adapted from literature,no,Only use if intention is a real construct
