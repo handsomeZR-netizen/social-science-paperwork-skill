@@ -1,6 +1,6 @@
 ---
 name: social-science-paperwork
-description: End-to-end social science and humanities manuscript workflow for research design, literature reviews, questionnaires, interviews, qualitative coding, survey analysis, APA/GB/T citation checks, ethics statements, submission audits, and premium classroom/demo draft manuscripts with LaTeX/PDF output. Use when Codex helps plan, draft, audit, or analyze social science, humanities, education, communication, management, design research, cultural studies, or mixed-methods papers, especially involving surveys, interviews, focus groups, case studies, thematic analysis, grounded theory, scales, reliability, validity, human-subject data, non-submission demo papers, classroom presentations, boss reports, simulated findings, draft-demo manuscripts, one-click complete papers, polished LaTeX, or "perfect paper" demo drafts.
+description: End-to-end social science and humanities manuscript workflow for research design, literature reviews, questionnaires, interviews, qualitative coding, survey analysis, APA/GB/T citation checks, ethics statements, journal/user-style adaptation, submission audits, and premium classroom/demo draft manuscripts with LaTeX/PDF output. Use when Codex helps plan, draft, audit, or analyze social science, humanities, education, communication, management, design research, cultural studies, or mixed-methods papers, especially involving surveys, interviews, focus groups, case studies, thematic analysis, grounded theory, scales, reliability, validity, human-subject data, target-journal style, advisor/lab writing preferences, non-submission demo papers, classroom presentations, boss reports, simulated findings, draft-demo manuscripts, one-click complete papers, polished LaTeX, or "perfect paper" demo drafts.
 ---
 
 # Social Science Paperwork
@@ -10,6 +10,19 @@ description: End-to-end social science and humanities manuscript workflow for re
 Treat AI as a research assistant, not the responsible researcher. Never invent data, citations, scales, ethics approvals, participants, interview quotes, statistical significance, or coding evidence. Keep a traceable chain from source material to claims.
 
 Default to **ask-first collaboration**. For underspecified social science or humanities tasks, ask a small number of high-impact questions before producing a full design. Do not bury the user in methodology; ask the decisions that change the plan.
+
+## User-Facing Collaboration Flow
+
+If the user is unsure how to work with AI, run the skill as a guided workflow, not a lecture. Load `references/user-facing-flow.md` when the user asks what to provide, wants a full process, or sounds unfamiliar with social science writing.
+
+Default to this conversational order:
+
+1. **Purpose** - Is this real research, a course demo, a boss report, a proposal, or revision?
+2. **Topic and audience** - What is the topic, discipline, target journal/class/advisor, and expected language?
+3. **Evidence already available** - Literature, interview transcripts, survey data, cases, archives, artifacts, or only an idea.
+4. **Method route** - Recommend one route card: qualitative-led, questionnaire-led, mixed-methods, literature/theory-led, or Premium Draft Demo.
+5. **Output contract** - State the exact files/sections to create and which parts will be real, proposed, simulated, or TODO.
+6. **Audit pass** - End with a claim-evidence map, risk list, and next questions instead of only polished prose.
 
 ## Mode Selection
 
@@ -40,6 +53,7 @@ Start by classifying the request:
 7. **Manuscript and submission** - APA 7, GB/T 7714, JARS, COREQ, STROBE, ethics, AI disclosure, references.
 8. **Draft Demo manuscript** - Clearly labeled classroom/demo paper, simulated method walkthrough, illustrative findings, presentation notes, and demo appendices.
 9. **Premium Draft Demo package** - One-click complete demo paper with polished LaTeX, section files, appendix files, claim-evidence map, quality audit, and PDF compilation.
+10. **Journal or advisor adaptation** - Learn section-level writing conventions from user-provided target-journal papers, field exemplars, or advisor/lab samples, then create a style profile and revision log without copying corpus text or changing facts.
 
 If the topic involves craft/design/culture/sustainability and the user has not specified a method, first offer route options: qualitative-led, questionnaire-led, mixed-methods, or literature/theory-led. If the user does not answer, proceed explicitly under the assumption of a **qualitative-led design**: literature landscape plus interviews/cases, with a small questionnaire only when it measures attitudes, perception, acceptance, or intention.
 
@@ -80,6 +94,9 @@ Before giving a full plan, usually ask about:
 9. **For Premium Draft Demo Mode, write output-first.**
    Build the one-sentence argument, claim-evidence map, manuscript skeleton, section files, appendices, and quality audit before compiling. The output should feel like a complete paper artifact while preserving Draft Demo transparency.
 
+10. **For journal/advisor adaptation, separate style learning from manuscript writing.**
+    Load `references/journal-style-adaptation.md`. Extract only rhetorical and structural patterns from the corpus, save a style profile, ask the user to confirm it, then revise one section at a time with a log. Preserve citations, facts, claims, quotes, statistics, variables, and labels verbatim unless the user explicitly asks for a content change.
+
 ## References To Load
 
 Load only the relevant reference file:
@@ -92,6 +109,8 @@ Load only the relevant reference file:
 - `references/quantitative-survey-analysis.md` - Survey cleaning, reliability, EFA/CFA, regression, mediation/moderation, APA-style reporting.
 - `references/citation-and-submission.md` - APA 7, GB/T 7714, JARS, COREQ, STROBE, ethics, AI disclosure, submission checks.
 - `references/question-flow.md` - User-friendly clarification flow and default questions.
+- `references/user-facing-flow.md` - Plain-language user workflow, question set, route cards, and output contracts.
+- `references/journal-style-adaptation.md` - Optional target-journal/advisor style-profile workflow adapted from dynamic writing-skill principles.
 - `references/writing-patterns.md` - Writing and structure moves distilled from a 50-paper recent social science corpus.
 - `references/draft-demo-mode.md` - Classroom/demo manuscript mode, transparent simulation labels, complete draft package structure.
 - `references/premium-draft-demo.md` - One-click polished demo paper package workflow with LaTeX/PDF output.
@@ -132,6 +151,7 @@ Before finalizing any plan or manuscript section, verify:
 - AI use disclosure follows the target journal's current policy.
 - Draft Demo outputs visibly label simulated materials and do not imply real data collection, real participants, real ethics approval, or real statistical results.
 - Premium Draft Demo outputs include a quality audit that checks disclosure visibility, claim-evidence alignment, overclaim risk, simulated-material labels, citation placeholders, and demo-to-real next steps.
+- Journal/advisor adaptation describes only structure, rhetoric, section order, claim placement, hedging, and revision rules. It must not quote or paraphrase corpus papers, and it must not add unsupported facts to the manuscript.
 
 ## Style Corpus
 

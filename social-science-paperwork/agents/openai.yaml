@@ -1,4 +1,4 @@
 interface:
   display_name: "Social Science Paperwork"
-  short_description: "Social science paper, demo draft, and LaTeX/PDF workflows"
-  default_prompt: "Use $social-science-paperwork to ask the key questions first, then help design, audit, or create a premium clearly labeled LaTeX/PDF demo draft for my social science manuscript workflow."
+  short_description: "Social science paper, journal-style, demo draft, and LaTeX/PDF workflows"
+  default_prompt: "Use $social-science-paperwork to ask the key questions first, then help design, audit, adapt to a target journal/advisor style, or create a premium clearly labeled LaTeX/PDF demo draft for my social science manuscript workflow."
