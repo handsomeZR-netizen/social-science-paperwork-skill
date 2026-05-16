@@ -1,0 +1,71 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+\usepackage[a4paper,top=2.35cm,bottom=2.35cm,left=2.45cm,right=2.45cm]{geometry}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{enumitem}
+\usepackage[table]{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{titlesec,fancyhdr,hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+\definecolor{clay}{RGB}{145,80,45}
+\definecolor{ink}{RGB}{42,42,40}
+\definecolor{sage}{RGB}{86,118,86}
+\definecolor{sand}{RGB}{249,244,235}
+\definecolor{mist}{RGB}{239,245,241}
+\definecolor{warn}{RGB}{170,78,42}
+\definecolor{linegray}{RGB}{218,213,205}
+
+\hypersetup{colorlinks=true,linkcolor=clay,urlcolor=clay,citecolor=sage}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.2em,topsep=0.25em}
+\setlist[enumerate]{leftmargin=1.55em,itemsep=0.2em,topsep=0.25em}
+\renewcommand{\arraystretch}{1.16}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\titleformat{\section}{\Large\bfseries\color{clay}}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\large\bfseries\color{ink}}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{sage}}{\thesubsubsection}{0.65em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Premium Draft Demo}
+\rhead{\small [Short title]}
+\cfoot{\small \thepage}
+
+\tcbset{
+  noticebox/.style={colback=warn!8,colframe=warn,boxrule=0.8pt,arc=1.5mm,left=2mm,right=2mm,top=1.5mm,bottom=1.5mm,breakable},
+  mainbox/.style={colback=sand,colframe=clay,boxrule=0.7pt,arc=1.5mm,left=2mm,right=2mm,top=1.5mm,bottom=1.5mm,breakable},
+  greenbox/.style={colback=mist,colframe=sage,boxrule=0.7pt,arc=1.5mm,left=2mm,right=2mm,top=1.5mm,bottom=1.5mm,breakable},
+  quotebox/.style={colback=white,colframe=linegray,boxrule=0.65pt,arc=1mm,left=2.5mm,right=2.5mm,top=1.5mm,bottom=1.5mm,breakable}
+}
+
+\newcommand{\demolabel}[1]{\textcolor{warn}{\textbf{[#1]}}}
+\newcommand{\realinput}{\demolabel{Real input}}
+\newcommand{\proposed}{\demolabel{Proposed design}}
+\newcommand{\simulated}{\demolabel{Simulated material}}
+\newcommand{\writingexample}{\demolabel{Writing example}}
+
+\title{\vspace{-1.2cm}{\bfseries\LARGE [Premium Draft Demo Title]}\\[0.4em]{\large [Subtitle]}}
+\author{Generated with \texttt{social-science-paperwork}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\input{demo_disclosure.tex}
+\input{sections/00_abstract.tex}
+\tableofcontents
+\newpage
+\input{sections/01_introduction.tex}
+\input{sections/02_literature_framework.tex}
+\input{sections/03_research_questions.tex}
+\input{sections/04_methodology.tex}
+\input{sections/05_illustrative_findings.tex}
+\input{sections/06_discussion.tex}
+\input{sections/07_conclusion.tex}
+\appendix
+\input{appendix/interview_protocol.tex}
+\input{appendix/questionnaire_demo.tex}
+\input{appendix/codebook_demo.tex}
+\end{document}
